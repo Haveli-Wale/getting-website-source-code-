@@ -1,3 +1,4 @@
+print("if output = any type of eroor . Please try pip install requests && pip install re")
 import requests
 import re
 
@@ -16,7 +17,7 @@ def CheckUp():
          url = website_name1
          return url
     else:
-        print("Incorrect Url==> provide orignal url if form of www.google.com Or http ://www.google.com")
+        print("Incorrect Url==> provide orignal url if form of www.google.com Or https://www.google.com")
 
 def Response():
     url = CheckUp()
@@ -49,6 +50,6 @@ def run():
     try:
         MakeAfile()
     except:
-        print("Something went worng check url")
+        print("Something went worng check url ::==> this tools support only termux")
 
 run()
